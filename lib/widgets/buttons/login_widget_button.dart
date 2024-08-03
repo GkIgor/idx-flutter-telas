@@ -30,9 +30,11 @@ class LoginWidgetButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
+        gradient: const RadialGradient(
           colors: colors,
           stops: stops,
+          center: Alignment(0, 0),
+          radius: 5.5,
         ),
         boxShadow: [
           BoxShadow(
